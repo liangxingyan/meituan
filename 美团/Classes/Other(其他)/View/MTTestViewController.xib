@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MTTestViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpn-8L-iLL">
+                    <rect key="frame" x="0.0" y="0.0" width="125" height="96"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tis-xL-mM3">
+                    <rect key="frame" x="125" y="0.0" width="125" height="96"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4d-lR-1ah">
+                    <rect key="frame" x="250" y="0.0" width="125" height="96"/>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Y4d-lR-1ah" firstAttribute="top" secondItem="tis-xL-mM3" secondAttribute="top" id="0eS-sy-JtG"/>
+                <constraint firstItem="dpn-8L-iLL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8aj-kE-GKo"/>
+                <constraint firstItem="tis-xL-mM3" firstAttribute="top" secondItem="dpn-8L-iLL" secondAttribute="top" id="8fo-e4-vTY"/>
+                <constraint firstItem="tis-xL-mM3" firstAttribute="bottom" secondItem="dpn-8L-iLL" secondAttribute="bottom" id="Cax-PZ-RZ7"/>
+                <constraint firstItem="Y4d-lR-1ah" firstAttribute="width" secondItem="dpn-8L-iLL" secondAttribute="width" id="IL4-Nk-d7S"/>
+                <constraint firstAttribute="bottom" secondItem="dpn-8L-iLL" secondAttribute="bottom" id="JQt-Xy-5yK"/>
+                <constraint firstAttribute="trailing" secondItem="Y4d-lR-1ah" secondAttribute="trailing" id="Px4-CP-0qF"/>
+                <constraint firstItem="Y4d-lR-1ah" firstAttribute="leading" secondItem="tis-xL-mM3" secondAttribute="trailing" id="YRQ-Ig-gd8"/>
+                <constraint firstItem="dpn-8L-iLL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="apy-q3-HsG"/>
+                <constraint firstItem="tis-xL-mM3" firstAttribute="leading" secondItem="dpn-8L-iLL" secondAttribute="trailing" id="ggZ-yy-04g"/>
+                <constraint firstItem="tis-xL-mM3" firstAttribute="width" secondItem="dpn-8L-iLL" secondAttribute="width" id="pAf-Cc-8NG"/>
+                <constraint firstItem="Y4d-lR-1ah" firstAttribute="bottom" secondItem="tis-xL-mM3" secondAttribute="bottom" id="zDo-HT-G7r"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="251.5" y="294"/>
+        </view>
+    </objects>
+</document>
