@@ -44,7 +44,6 @@
     UITableViewCell *cell = nil;
     
     if (tableView == self.leftTableView) {
-        // 显示文字
         static NSString *ID = @"left-cell";
         cell = [tableView dequeueReusableCellWithIdentifier:ID];
         if (cell == nil) {
@@ -52,22 +51,20 @@
             cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg_dropdown_leftpart"]];
             cell.selectedBackgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg_dropdown_left_selected"]];
         }
-        
         NSArray *subdata = [self.dataSource dropdown:self subdataForRowInLeftTable:indexPath.row];
         cell.textLabel.text = [self.dataSource dropdown:self titleForRowLeftTable:indexPath.row];
-        cell.imageView.image = [UIImage imageNamed:[self.dataSource dropdown:self iconForRowLeftTable:indexPath.row]];
-        cell.imageView.highlightedImage = [UIImage imageNamed:[self.dataSource dropdown:self selectedIconForRowLeftTable:indexPath.row]];
-        
+        if ([self.dataSource respondsToSelector:@selector(dropdown:iconForRowLeftTable:)]) {
+            cell.imageView.image = [UIImage imageNamed:[self.dataSource dropdown:self iconForRowLeftTable:indexPath.row]];
+        }
+        if ([self.dataSource respondsToSelector:@selector(dropdown:selectedIconForRowLeftTable:)]) {
+            cell.imageView.highlightedImage = [UIImage imageNamed:[self.dataSource dropdown:self selectedIconForRowLeftTable:indexPath.row]];
+        }
         cell.textLabel.font = [UIFont systemFontOfSize:12];
-        // 设置cell右边的箭头
         if (subdata.count) {
-            
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-            
         }else {
             cell.accessoryType = UITableViewCellAccessoryNone;
         }
-
         
     } else { // 右边的tableview
         static NSString *ID = @"right-cell";
@@ -78,10 +75,9 @@
             cell.selectedBackgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg_dropdown_right_selected"]];
         }
         cell.textLabel.font = [UIFont systemFontOfSize:12];
-        NSArray *subdata = [self.dataSource dropdown:self subdataForRowInLeftTable:indexPath.row];
+        NSArray *subdata = [self.dataSource dropdown:self subdataForRowInLeftTable:self.selectedLeftRow];
         cell.textLabel.text = subdata[indexPath.row];
     }
-    
     return cell;
 }
 

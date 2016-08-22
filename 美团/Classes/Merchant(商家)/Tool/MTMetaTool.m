@@ -10,13 +10,13 @@
 #import <MJExtension.h>
 #import "MTCity.h"
 #import "MTCategory.h"
+#import "MTSort.h"
 
 
 @implementation MTMetaTool
 
 
 static NSArray *_cities;
-
 + (NSArray *)cities {
     if (!_cities) {
         _cities = [MTCity mj_objectArrayWithFilename:@"cities.plist"];
@@ -25,12 +25,19 @@ static NSArray *_cities;
 }
 
 static NSArray *_categories;
-
 + (NSArray *)categories {
     if (!_categories) {
         _categories = [MTCategory mj_objectArrayWithFilename:@"categories.plist"];
     }
     return _categories;
+}
+
+static NSArray *_sorts;
++ (NSArray *)sorts {
+    if (!_sorts) {
+        _sorts = [MTSort mj_objectArrayWithFilename:@"sorts.plist"];
+    }
+    return _sorts;
 }
 
 

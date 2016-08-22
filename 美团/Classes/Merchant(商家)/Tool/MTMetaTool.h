@@ -10,14 +10,12 @@
 
 @interface MTMetaTool : NSObject
 
-/**
- *  返回344个城市
- */
+/** 返回344个城市 */
 + (NSArray *)cities;
 
-/**
- *  返回所有的分类数据
- */
+/** 返回所有的分类数据 */
 + (NSArray *)categories;
 
+/** 返回所有的排序数据 */
++ (NSArray *)sorts;
 @end

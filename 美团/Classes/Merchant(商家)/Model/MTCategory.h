@@ -24,4 +24,5 @@
 @property (nonatomic, copy) NSString *highlighted_icon;
 /** 地图中的图片 */
 @property (nonatomic, copy) NSString *map_icon;
+
 @end

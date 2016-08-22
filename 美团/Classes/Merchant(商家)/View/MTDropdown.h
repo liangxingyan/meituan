@@ -14,19 +14,18 @@
 /** 左边的表格一共有多少行 */
 - (NSInteger)numberOfRowsInLeftTable:(MTDropdown *)dropdown;
 
-@optional
-
 /** 某行显示的文字 */
 - (NSString *)dropdown:(MTDropdown *)dropdown titleForRowLeftTable:(NSInteger)row;
 
+/** 左边表视图的子数据 */
+- (NSArray *)dropdown:(MTDropdown *)dropdown subdataForRowInLeftTable:(NSInteger)row;
+
+@optional
 /** 某行显示的图标 */
 - (NSString *)dropdown:(MTDropdown *)dropdown iconForRowLeftTable:(NSInteger)row;
 
 /** 某行显示的高亮图标 */
 - (NSString *)dropdown:(MTDropdown *)dropdown selectedIconForRowLeftTable:(NSInteger)row;
-
-/** 左边表视图的子数据 */
-- (NSArray *)dropdown:(MTDropdown *)dropdown subdataForRowInLeftTable:(NSInteger)row;
 
 @end
 

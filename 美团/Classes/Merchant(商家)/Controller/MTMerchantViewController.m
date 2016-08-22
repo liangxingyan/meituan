@@ -10,6 +10,7 @@
 #import <Masonry.h>
 #import "MTCategoryViewController.h"
 #import "MTDistrictViewController.h"
+#import "MTSortViewController.h"
 #import "MTMetaTool.h"
 #import "MTCity.h"
 
@@ -33,6 +34,9 @@
 /** 区域控制器 */
 @property (nonatomic, strong) MTDistrictViewController *districtVc;
 
+/** 排序控制器 */
+@property (nonatomic, strong) MTSortViewController *sortVc;
+
 /** 当前选中的城市 */
 @property (nonatomic, copy) NSString *selectCityName;
 
@@ -49,8 +53,6 @@ static NSString * const reuseIdentifier = @"cell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-//    [UIPopoverController]
     
     // 初始化导航栏
     [self setupNav];
@@ -192,6 +194,21 @@ static NSString * const reuseIdentifier = @"cell";
 
 - (void)sortWayClick {
 
+    self.sortWayBtn.selected = !self.sortWayBtn.selected;
+    
+    if(self.sortWayBtn.selected == 0) {
+        // 隐藏
+        [self.sortVc.view removeFromSuperview];
+    } else {
+        // 总算解决之前不能放外面的原因了，category要用strong
+        MTSortViewController *sortVc = [[MTSortViewController alloc] init];
+        sortVc.menuView = self.menuView;
+        self.sortVc = sortVc;
+        // 显示
+        [self.collectionView addSubview:self.sortVc.view];
+    }
+
+    
 }
 
 #pragma mark - 设置按钮内容(抽取的方法)

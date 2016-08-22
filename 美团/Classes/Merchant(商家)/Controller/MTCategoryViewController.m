@@ -21,12 +21,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
     // 下拉框
     MTDropdown *dropdown = [MTDropdown dropdown];
     dropdown.dataSource = self;
-    
     
     // 这里之前报错是因为要先将dropdown加入到父视图，再设置约束就好了
     self.view.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.3];
@@ -34,13 +31,11 @@
     
     // 添加到父视图
     [self.view addSubview:dropdown];
-//    NSArray *categories = [MTCategory mj_objectArrayWithFilename:@"categories.plist"];
-    
     [dropdown mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.view.mas_left);
         make.right.equalTo(self.view.mas_right);
         make.top.mas_equalTo(self.view.mas_top);
-        make.height.mas_equalTo(MTScreenH * 0.4);
+        make.height.mas_equalTo(MTScreenH * 0.5);
     }];
 
 }
@@ -49,10 +44,9 @@
     _menuView = menuView;
 }
 
-
 // 在这里将self.view当做遮盖，点击遮盖， 让self.view隐藏
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-
+    NSLog(@"...");
 }
 
 #pragma mark - MTDropdownDataSource

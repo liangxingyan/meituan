@@ -37,7 +37,7 @@
         make.left.equalTo(self.view.mas_left);
         make.right.equalTo(self.view.mas_right);
         make.top.mas_equalTo(self.view.mas_top);
-        make.height.mas_equalTo(MTScreenH * 0.4);
+        make.height.mas_equalTo(MTScreenH * 0.5);
     }];
     
 }
@@ -62,11 +62,9 @@
     return region.name;
 }
 
-
 - (NSArray *)dropdown:(MTDropdown *)dropdown subdataForRowInLeftTable:(NSInteger)row {
     MTRegion *region = self.regions[row];
     return region.subregions;
 }
-
 
 @end

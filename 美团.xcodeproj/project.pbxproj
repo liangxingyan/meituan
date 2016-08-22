@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A6F10041D6149D30012AE0F /* MTConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6F10031D6149D30012AE0F /* MTConst.m */; };
+		0A86E6C01D609FA600BFD1B9 /* MTSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A86E6BF1D609FA600BFD1B9 /* MTSort.m */; };
+		0A86E6C31D60A0EE00BFD1B9 /* MTSortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A86E6C21D60A0EE00BFD1B9 /* MTSortViewController.m */; };
 		61C6B137183CE95B01202C3F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2366096A9A0C7A6610561A8E /* libPods.a */; };
 		89042DD71D140AE50069457D /* MTTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89042DD51D140AE50069457D /* MTTestViewController.m */; };
 		89042DD81D140AE50069457D /* MTTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89042DD61D140AE50069457D /* MTTestViewController.xib */; };
@@ -45,7 +48,6 @@
 		89F52FB21D166475004CE47A /* MTRegion.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F52FB11D166475004CE47A /* MTRegion.m */; };
 		89F52FB51D166B54004CE47A /* MTCityGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F52FB41D166B54004CE47A /* MTCityGroup.m */; };
 		89F52FBC1D16961E004CE47A /* MTCitySearchResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F52FBB1D16961E004CE47A /* MTCitySearchResultViewController.m */; };
-		89F52FBF1D16B266004CE47A /* MTConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F52FBE1D16B266004CE47A /* MTConst.m */; };
 		89F52FC21D16D58E004CE47A /* MTCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F52FC11D16D58E004CE47A /* MTCategoryViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +69,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A6F10021D6149D30012AE0F /* MTConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTConst.h; sourceTree = "<group>"; };
+		0A6F10031D6149D30012AE0F /* MTConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTConst.m; sourceTree = "<group>"; };
+		0A86E6BE1D609FA600BFD1B9 /* MTSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTSort.h; sourceTree = "<group>"; };
+		0A86E6BF1D609FA600BFD1B9 /* MTSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTSort.m; sourceTree = "<group>"; };
+		0A86E6C11D60A0EE00BFD1B9 /* MTSortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTSortViewController.h; sourceTree = "<group>"; };
+		0A86E6C21D60A0EE00BFD1B9 /* MTSortViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTSortViewController.m; sourceTree = "<group>"; };
 		1352BC3BD92046B41FE9EC9B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		2366096A9A0C7A6610561A8E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		89042DD41D140AE50069457D /* MTTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTestViewController.h; sourceTree = "<group>"; };
@@ -138,8 +146,6 @@
 		89F52FB71D168066004CE47A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		89F52FBA1D16961E004CE47A /* MTCitySearchResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCitySearchResultViewController.h; sourceTree = "<group>"; };
 		89F52FBB1D16961E004CE47A /* MTCitySearchResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCitySearchResultViewController.m; sourceTree = "<group>"; };
-		89F52FBD1D16B266004CE47A /* MTConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTConst.h; sourceTree = "<group>"; };
-		89F52FBE1D16B266004CE47A /* MTConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTConst.m; sourceTree = "<group>"; };
 		89F52FC01D16D58E004CE47A /* MTCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCategoryViewController.h; sourceTree = "<group>"; };
 		89F52FC11D16D58E004CE47A /* MTCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCategoryViewController.m; sourceTree = "<group>"; };
 		EA9B94D3BE34BFBFFC848359 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -321,6 +327,8 @@
 				89F52FC11D16D58E004CE47A /* MTCategoryViewController.m */,
 				890ED0111D17FE1C0074C9A2 /* MTDistrictViewController.h */,
 				890ED0121D17FE1C0074C9A2 /* MTDistrictViewController.m */,
+				0A86E6C11D60A0EE00BFD1B9 /* MTSortViewController.h */,
+				0A86E6C21D60A0EE00BFD1B9 /* MTSortViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -330,6 +338,8 @@
 			children = (
 				89F52F9D1D162D09004CE47A /* MTCategory.h */,
 				89F52F9E1D162D09004CE47A /* MTCategory.m */,
+				0A86E6BE1D609FA600BFD1B9 /* MTSort.h */,
+				0A86E6BF1D609FA600BFD1B9 /* MTSort.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -458,6 +468,8 @@
 		894E6CF91D128A5D003DA00D /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				0A6F10021D6149D30012AE0F /* MTConst.h */,
+				0A6F10031D6149D30012AE0F /* MTConst.m */,
 				894E6CFA1D128A5D003DA00D /* AppDelegate.h */,
 				894E6CFB1D128A5D003DA00D /* AppDelegate.m */,
 			);
@@ -472,8 +484,6 @@
 				89042DD41D140AE50069457D /* MTTestViewController.h */,
 				89042DD51D140AE50069457D /* MTTestViewController.m */,
 				89042DD61D140AE50069457D /* MTTestViewController.xib */,
-				89F52FBD1D16B266004CE47A /* MTConst.h */,
-				89F52FBE1D16B266004CE47A /* MTConst.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -741,9 +751,9 @@
 				894E6D081D128A5D003DA00D /* MTTabBarController.m in Sources */,
 				894E6C7A1D12533A003DA00D /* main.m in Sources */,
 				89F52F9F1D162D09004CE47A /* MTCategory.m in Sources */,
+				0A86E6C01D609FA600BFD1B9 /* MTSort.m in Sources */,
 				894E6D071D128A5D003DA00D /* MTNavigationController.m in Sources */,
 				894E6D041D128A5D003DA00D /* NSDictionary+Log.m in Sources */,
-				89F52FBF1D16B266004CE47A /* MTConst.m in Sources */,
 				894E6D031D128A5D003DA00D /* NSArray+Log.m in Sources */,
 				89F52FAF1D1663AF004CE47A /* MTCity.m in Sources */,
 				899ADC311D139AEA000936B0 /* MTMerchantViewController.m in Sources */,
@@ -751,8 +761,10 @@
 				894E6D091D128A5D003DA00D /* AppDelegate.m in Sources */,
 				894E6D011D128A5D003DA00D /* MTMineController.m in Sources */,
 				890ED0171D1802200074C9A2 /* MTMetaTool.m in Sources */,
+				0A6F10041D6149D30012AE0F /* MTConst.m in Sources */,
 				894E6D021D128A5D003DA00D /* MTMiscController.m in Sources */,
 				890ED0131D17FE1C0074C9A2 /* MTDistrictViewController.m in Sources */,
+				0A86E6C31D60A0EE00BFD1B9 /* MTSortViewController.m in Sources */,
 				89F52FAB1D16592B004CE47A /* MTLocationViewController.m in Sources */,
 				894E6D051D128A5D003DA00D /* UIBarButtonItem+MTExtension.m in Sources */,
 			);
